@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Add welcome message to README.md
+echo "# Subaru Fan Club" >> README.md
+echo "Welcome to the Subaru Fan Club!" >> README.md
+
+# Initialize a new Git repository
+git init
+
+# Stage and commit the changes
+git add README.md
+git commit -m "Initial commit with welcome message"
+
+# Rename the default branch to 'main'
+git branch -M main
+
+# Add a remote named 'origin' with your GitHub repository URL
+git remote add origin https://github.com/student131313/2001.git
+
+# Push the changes to the remote repository on GitHub
+git push -u origin main
